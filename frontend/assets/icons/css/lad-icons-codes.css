@@ -1,0 +1,5 @@
+
+.icon-globe:before { content: '\e800'; } /* '' */
+.icon-login:before { content: '\e801'; } /* '' */
+.icon-password:before { content: '\e802'; } /* '' */
+.icon-arrow-right:before { content: '\e803'; } /* '' */
