@@ -40,6 +40,7 @@ admin-compliant permissions.
     admin = models.BooleanField(default=False)
     blocked = models.BooleanField(default=False)
     created = models.DateTimeField(default=timezone.now)
+    deleted = models.BooleanField(default=False)
     objects = UserManager()
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']

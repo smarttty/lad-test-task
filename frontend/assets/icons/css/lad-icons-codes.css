@@ -3,3 +3,8 @@
 .icon-login:before { content: '\e801'; } /* '' */
 .icon-password:before { content: '\e802'; } /* '' */
 .icon-arrow-right:before { content: '\e803'; } /* '' */
+.icon-down:before { content: '\e804'; } /* '' */
+.icon-filter:before { content: '\e805'; } /* '' */
+.icon-edit:before { content: '\e806'; } /* '' */
+.icon-delete:before { content: '\e807'; } /* '' */
+.icon-sort:before { content: '\e809'; } /* '' */

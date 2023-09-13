@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'lad-icons';
-  src: url('../font/lad-icons.eot?91376832');
-  src: url('../font/lad-icons.eot?91376832#iefix') format('embedded-opentype'),
-       url('../font/lad-icons.woff2?91376832') format('woff2'),
-       url('../font/lad-icons.woff?91376832') format('woff'),
-       url('../font/lad-icons.ttf?91376832') format('truetype'),
-       url('../font/lad-icons.svg?91376832#lad-icons') format('svg');
+  src: url('../font/lad-icons.eot?96676146');
+  src: url('../font/lad-icons.eot?96676146#iefix') format('embedded-opentype'),
+       url('../font/lad-icons.woff2?96676146') format('woff2'),
+       url('../font/lad-icons.woff?96676146') format('woff'),
+       url('../font/lad-icons.ttf?96676146') format('truetype'),
+       url('../font/lad-icons.svg?96676146#lad-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'lad-icons';
-    src: url('../font/lad-icons.svg?91376832#lad-icons') format('svg');
+    src: url('../font/lad-icons.svg?96676146#lad-icons') format('svg');
   }
 }
 */
@@ -58,3 +58,8 @@
 .icon-login:before { content: '\e801'; } /* '' */
 .icon-password:before { content: '\e802'; } /* '' */
 .icon-arrow-right:before { content: '\e803'; } /* '' */
+.icon-down:before { content: '\e804'; } /* '' */
+.icon-filter:before { content: '\e805'; } /* '' */
+.icon-edit:before { content: '\e806'; } /* '' */
+.icon-delete:before { content: '\e807'; } /* '' */
+.icon-sort:before { content: '\e809'; } /* '' */

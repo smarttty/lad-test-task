@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(./assets/fonts/stylesheet.css);
+@import url(./assets/fonts/style-actor.css);
 @import url(./assets/icons/css/lad-icons.css);
 html {
   height: 100%;
@@ -12,6 +13,9 @@ body {
   background-color: #010001;
   padding: 110px 55px 110px 55px;
   font-family: "Yandex Sans Text";
+}
+body.no-padding {
+  padding: 0;
 }
 body input,
 body select,
@@ -155,6 +159,293 @@ body #app .login-block .login-form .login-inputs form .row input {
 body #app .login-block .login-form .login-inputs form .row input[type=checkbox] {
   display: none;
 }
+body #app .user-list .navigation-bar {
+  width: 100%;
+  background-color: #383838;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+  flex: 1 0 0;
+  align-self: stretch;
+  position: relative;
+  font-family: Actor;
+}
+body #app .user-list .navigation-bar .link {
+  color: #DBDBDB;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  height: calc(100% - 1px);
+}
+body #app .user-list .navigation-bar .person {
+  position: absolute;
+  height: 100%;
+  line-height: 34px;
+  right: 15px;
+  display: inline-flex;
+}
+body #app .user-list .navigation-bar .person .logo {
+  color: #DBDBDB;
+  font-size: 13px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #9a9a9a;
+  margin-top: 3px;
+  text-align: center;
+  line-height: 25px;
+}
+body #app .user-list .navigation-bar .person i.menu {
+  font-size: 8px;
+  color: #FFFFFF;
+}
+body #app .user-list .action-bar {
+  width: calc(100% - 30px);
+  display: flex;
+  height: 22px;
+  padding: 14px 0 14px 30px;
+  justify-content: left;
+  color: #DBDBDB;
+  align-items: center;
+  gap: 25px;
+  flex: 1 0 0;
+  align-self: stretch;
+  position: relative;
+  font-family: Actor;
+  font-size: 15px;
+}
+body #app .user-list .action-bar .action {
+  padding: 0 15px;
+  text-align: center;
+}
+body #app .user-list .action-bar .action:first-child {
+  width: auto;
+}
+body #app .user-list .filter-table-bar {
+  width: calc(100% - 30px);
+  display: flex;
+  height: 22px;
+  padding: 14px 0 14px 30px;
+  justify-content: left;
+  color: #FFFFFF;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  position: relative;
+  font-family: Actor;
+  font-size: 17px;
+}
+body #app .user-list .filter-table-bar .filter {
+  width: auto;
+  padding: 5px;
+}
+body #app .user-list .filter-table-bar .filter:hover {
+  cursor: pointer;
+}
+body #app .user-list .filter-table-bar .filter:last-child {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+}
+body #app .user-list .filter-table-bar .filter .status {
+  display: inline-block;
+}
+body #app .user-list .filter-table-bar .filter .count {
+  width: 16px;
+  height: 14px;
+  display: inline-block;
+  transform: translate(0, -25%);
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  color: #000;
+  font-size: 9px;
+  text-align: center;
+}
+body #app .user-list .filter-table-bar .filter button.new-user {
+  width: 86px;
+  height: 31px;
+  border: 1px solid #428888;
+  color: #428888;
+  padding: 2px 1px;
+  font-size: 17px;
+  background-color: inherit;
+}
+body #app .user-list table {
+  width: calc(100% - 30px);
+  padding: 14px 0 14px 30px;
+  color: #FFFFFF;
+  border-spacing: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+body #app .user-list table thead {
+  background-color: #2A282A;
+  height: 48px;
+}
+body #app .user-list table thead td {
+  padding: 14px;
+}
+body #app .user-list table thead td:first-child {
+  border-radius: 10px 0 0 0px;
+}
+body #app .user-list table thead td:last-child {
+  border-radius: 0 10px 0px 0;
+}
+body #app .user-list table thead td:hover {
+  cursor: pointer;
+}
+body #app .user-list table thead td.asc i.icon-sort {
+  color: #219653;
+}
+body #app .user-list table thead td.desc i.icon-sort {
+  color: #EB5757;
+}
+body #app .user-list table tbody {
+  overflow-y: scroll;
+}
+body #app .user-list table tbody tr {
+  background-color: #121212;
+}
+body #app .user-list table tbody tr td {
+  padding: 14px;
+}
+body #app .user-list table tbody tr td:hover {
+  cursor: pointer;
+}
+body #app .user-list table tbody tr td div {
+  vertical-align: middle;
+  display: inline-block;
+}
+body #app .user-list table tbody tr td .logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #9a9a9a;
+  font-size: 9px;
+  text-align: center;
+  line-height: 25px;
+}
+body #app .user-list table tbody tr td .fio {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+body #app .user-list table tbody tr td .fio .email {
+  font-size: 12px;
+  line-height: 16px;
+  color: #919191;
+}
+body #app .user-list table tbody tr td .status::after {
+  color: #E0E0E0;
+  border-radius: 16px;
+  width: 59px;
+  height: 20px;
+  font-size: 12px;
+  padding: 2px 6px;
+  margin-left: 10px;
+}
+body #app .user-list table tbody tr td .status.blocked::after {
+  content: "blocked";
+  background-color: #EB5757;
+}
+body #app .user-list table tbody tr td .status.admin::after {
+  content: "admin";
+  background-color: #219653;
+}
+body #app .user-list table tbody tr td .date {
+  font-family: "Yandex Sans Text";
+  font-size: 11px;
+}
+body #app .user-list table tbody tr td i.icon-edit {
+  color: #367070;
+  font-size: 16px;
+}
+body #app .user-list table tbody tr td i.icon-delete {
+  color: #C60707;
+  font-size: 7px;
+  vertical-align: middle;
+}
+body #app .user-list .footer {
+  width: calc(100% - 60px);
+  padding: 14px 30px 14px 30px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+body #app .user-list .footer div {
+  display: inline-block;
+}
+body #app .user-list .footer .previous:hover {
+  cursor: pointer;
+}
+body #app .user-list .footer .previous::before {
+  content: "";
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+}
+body #app .user-list .footer .previous button {
+  font-size: 14px;
+  font-family: "Roboto";
+  background-color: #010001;
+  color: #FFFFFF;
+}
+body #app .user-list .footer .previous button:hover {
+  cursor: pointer;
+}
+body #app .user-list .footer .next:hover {
+  cursor: pointer;
+}
+body #app .user-list .footer .next::after {
+  content: "";
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+}
+body #app .user-list .footer .next button {
+  font-size: 14px;
+  font-family: "Roboto";
+  background-color: #010001;
+  color: #FFFFFF;
+}
+body #app .user-list .footer .next button:hover {
+  cursor: pointer;
+}
+body #app .user-list .footer .pages {
+  font-size: 14px;
+  font-family: "Roboto";
+  background-color: #010001;
+  color: #FFFFFF;
+}
+body #app .user-list .footer .pages .page {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+body #app .user-list .footer .pages .page.selected {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #0080FF;
+}
+body #app .user-list .footer .pages .page:hover {
+  cursor: pointer;
+}
 
 i.login {
   background-image: url(./assets/images/login.svg);
@@ -198,6 +489,10 @@ input[type=checkbox]:checked + label.checkbox::after {
 }
 label:hover {
   cursor: pointer;
+}
+
+.active {
+  border-bottom: 1px solid #30C5C1;
 }
 
 /*# sourceMappingURL=style.css.map */
